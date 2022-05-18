@@ -1,0 +1,156 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block Title %}Documents{% endblock  %}
+
+{% block Style %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-space-dynamic.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <style>
+      label{
+        margin-top:10px;
+        font-family:impact
+      }
+      .laymanfield{
+        width:150px;
+        border-style: none;
+        margin-top:10px;
+        border-bottom: solid #D7D7D7 1px
+        
+      }
+      .Contents{
+        margin-top:10px;
+        font-style: Monospace
+      }
+    </style>
+{% endblock  %}
+
+
+
+
+{% block content %}
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="#" class="logo">
+                <h4>Imagine<span>labs</span></h4>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="{% url 'Home' %}" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
+                <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
+              </ul>        
+              <a class='menu-trigger'>
+                  <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+  
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div class="container">
+        <h2>Your Previous Searches Are</h2>
+        {% for i in Data %}
+        <div class="Contents">
+          
+          <h4>{{i.Query}}</h4>
+          <a href="media/{{i.FileLoc}}"><p>Click Here to download <<<</p></a>
+        </div>
+          
+        {% endfor %}
+      </div>
+    </div>
+  
+  
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+            <div class="section-heading">
+              <h2>Feel Free To Send Us a Message About Your needs more of our products</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
+              <div class="phone-info">
+                <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">+91 6290873065</a></span></h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+            <form id="contact" action="" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="contact-dec">
+                <img src="{% static 'assets/images/contact-decoration.png' %}" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+            <p>© Copyright 2022 Mighty Neurons Co. All Rights Reserved. 
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+{% endblock  %}
+
+
+{% block Js %}
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/animation.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+    <script src="{% static 'assets/js/templatemo-custom.js' %}"></script>
+{% endblock  %}

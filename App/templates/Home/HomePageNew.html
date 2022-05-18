@@ -1,0 +1,447 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block Title %}{% endblock  %}
+
+{% block Style %}
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="{% static 'NewW/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'NewW/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'NewW/assets/css/templatemo-host-cloud.css' %}">
+    <link rel="stylesheet" href="{% static 'NewW/assets/css/owl.css' %}">
+{% endblock  %}
+
+
+
+
+{% block content %}
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'Index' %}"><h2>Imagine<em>labs</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'Index' %}">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="functional-buttons">
+            <ul>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="header-text caption">
+              <h2>Search your Documents</h2>
+              <div id="search-section">
+              	<form id="suggestion_form" name="gs" method="get" action="#">
+                <div class="searchText">
+                  
+                  <input type="text" name="q" class="searchText" placeholder="Search your documents here..." autocomplete="on">
+
+                </div>
+                    <input type="submit" name="results" class="main-button" value="Search Now">
+                 </form>
+               <div class="advSearch_chkbox">
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <!-- Trusted Starts Here -->
+    <div class="trusted-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="trusted-section-heading">
+              <h4>TRUSTED BY 1,250+ HAPPY CUSTOMERS WORLDWIDE</h4>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-trusted owl-carousel">
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 1">
+              </div>
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 2">
+              </div>
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 3">
+              </div>
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 4">
+              </div>
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 5">
+              </div>
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 6">
+              </div>
+              <div class="trusted-item">
+                <img src="{% static 'NewW/assets/images/trusted-01.png' %}" alt="trusted 7">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trusted Ends Here -->
+
+
+    <!-- Services Starts Here -->
+    <div class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <span>Category 1</span>
+              <h2>Services we provide</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-database"></i>
+              <h4>Category 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-database"></i>
+              <h4>Category 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Please <a rel="nofollow" href="#" target="_parent">contact us</a> if you want to.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-database"></i>
+              <h4>Category 4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Ends Here -->
+
+
+    <!-- Pricing Starts Here -->
+    <div class="pricing-section">
+      <div class="background-image-pricing">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="section-heading">
+              <h2>Subcription Plan </h2>
+              <p>Lorem ipsum dolor amet taxidermy sriracha cardigan salvia actually vice migas enamel pin sustainable carry scenester lomo hot chicken farm table actually kinfolk.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-item">
+              <h4>Basic Plan</h4>
+              <div class="price">
+                <h6>$15.50</h6>
+                <span>monthly</span>
+              </div>
+              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
+              <div class="dev"></div>
+              <ul>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Cancel or Upgrade Anytime</li>
+              </ul>
+              <a href="#" class="main-button">Start Plan</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-item">
+              <h4>Standared Plan</h4>
+              <div class="price price-gradient">
+                <h6>$30.00</h6>
+                <span>monthly</span>
+              </div>
+              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
+              <div class="dev"></div>
+              <ul>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Cancel or Upgrade Anytime</li>
+              </ul>
+              <a href="#" class="gradient-button">Select Plan</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-item">
+              <h4>Advanced Plan</h4>
+              <div class="price">
+                <h6>$72.25</h6>
+                <span>monthly</span>
+              </div>
+              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
+              <div class="dev"></div>
+              <ul>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+                <li><i class="fa fa-check"></i>Lorem ipsum</li>
+              </ul>
+              <a href="#" class="main-button">Take it now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Ends Here -->
+
+
+    <!-- Features Starts Here -->
+    <div class="features-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <span>Best Quality for you</span>
+              <h2>Features</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="assets/images/feature-01.png" alt="">
+              </div>
+              <h4>Advantage 1</h4>
+              <p>Nulla nisl ex, vehicula in urna nec, commodo consectetur augue. Vivamus nec metus mauris. Praesent lacinia tempus urna.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="assets/images/feature-01.png" alt="">
+              </div>
+              <h4>Advantage 2</h4>
+              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="assets/images/feature-01.png" alt="">
+              </div>
+              <h4>Advantage 3</h4>
+              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="assets/images/feature-01.png" alt="">
+              </div>
+              <h4>Advantage 4</h4>
+              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="assets/images/feature-01.png" alt="">
+              </div>
+              <h4>Advantage 5</h4>
+              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="assets/images/feature-01.png" alt="">
+              </div>
+              <h4>Advantage 6</h4>
+              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features Ends Here -->
+
+
+    <!-- Testimonials Starts Here -->
+    <div class="testimonials-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <span>Testimonials</span>
+              <h2>What they say about us</h2>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <div class="owl-testimonials owl-carousel">
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
+                <h4>William Smith</h4>
+                <span>New Co-Founder</span>
+              </div>
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
+                <h4>Vinny Smart</h4>
+                <span>Digital Marketer</span>
+              </div>
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
+                <h4>Trevor Liam</h4>
+                <span>Technology Chef</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Ends Here -->
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>About Us</h2>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Hosting Plans</h2>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Besic Plan</a></li>
+                <li><a href="#">Standared Plan</a></li>
+                <li><a href="#">Advanced Plan</a></li>
+                <li><a href="#">Custom Plan</a></li>
+                <li><a href="#">Special Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Useful Links</h2>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Advantage 1</a></li>
+                <li><a href="#">Advantage 2</a></li>
+                <li><a href="#">Advantage 3</a></li>
+                <li><a href="#">Advantage 4</a></li>
+                <li><a href="#">Advantage 5</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>More Information</h2>
+              </div>
+              <ul class="footer-list">
+                <li>Phone: <a href="#">010-020-0560</a></li>
+                <li>Email: <a href="#">mail@company.com</a></li>
+                <li>Support: <a href="#">support@company.com</a></li>
+                <li>Website: <a href="#">www.company.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="sub-footer">
+              <p>Copyright @ MightyNeurons; </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+{% endblock  %}
+
+
+{% block Js %}
+<script src="{% static 'NewW/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'NewW/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Additional Scripts -->
+<script src="{% static 'NewW/assets/js/custom.js' %}"></script>
+<script src="{% static 'NewW/assets/js/owl.js' %}"></script>
+<script src="{% static 'NewW/assets/js/accordions.js' %}"></script>
+
+
+<script language = "text/Javascript"> 
+  cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+  function clearField(t){                   //declaring the array outside of the
+  if(! cleared[t.id]){                      // function makes it static and global
+      cleared[t.id] = 1;  // you could use true and false, but that's more typing
+      t.value='';         // with more chance of typos
+      t.style.color='#fff';
+      }
+  }
+</script>
+{% endblock  %}
